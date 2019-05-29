@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Lorem ipsum co.</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header_logo"> <p> <img class="bicon" src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.theloremipsumco.com/wp-content/uploads/2017/09/Lorem-Ipsum-Co-Logo-Black-Gray2.png"  alt="logo"> </p>
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html#1">ABOUT US</a>
+				<a href="index.html#2">WRITE COMMENT</a>
+				<a href="#">COMMENTS</a>
+				<a href="#" id="menu" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+	<div class="container" id="app">
+		<h3 class="text-center">Comments</h3>
+			<div class="columns_medium-4" v-for="(result, index) in results">
+					<div class="card">
+						<div class="card-section">
+							<p> {{ result.id }} </p>
+						</div>
+					<div class="card-divider">
+						<p>{{ result.created_at }}</p>
+					</div>
+					<div class="card-section">
+						<p> {{ result.title }}</p>
+					</div>
+					<div class="card-section">
+						<p> {{ result.body }}</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	  <footer>
+		<section class="Contacts" id="2">
+			<div class="Cont_wrapper">
+				<div class="left_cont">
+					<p>mail@mailtest.com</p>
+					<p>+30-6977664062</p>
+				</div>
+				<div class="right_cont">
+					<p>Copyright @ 2019 tesr All Rights Reserved.</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
